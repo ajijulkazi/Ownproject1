@@ -1,12 +1,25 @@
+import { Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Footer from './componenets/Footer/Footer';
+import Header from './componenets/Header/Header';
 import User from './componenets/User/User';
 
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route>
+          <User></User>
+          </Route>
+        </Switch>
 
-      <h2>Hello world.</h2>
-      <User></User>
+        <Footer></Footer>
+      
+      </Router>
         </div>
   );
 }
