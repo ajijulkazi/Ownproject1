@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import UserInfo from '../UserInfo/UserInfo';
+import './User.css';
 
 const User = () => {
     const [users, setUser] = useState([]);
@@ -9,7 +10,8 @@ const User = () => {
         .then(data=>setUser(data));
     },[]);
     return (
-        <div>
+        <div className='grid grid-cols-3 gap-4>
+        '>
             {
                 users.map(user=> <UserInfo 
                 key={user.id}
