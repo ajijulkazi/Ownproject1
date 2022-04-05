@@ -1,5 +1,5 @@
 .user {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-gap: 20px;
 }

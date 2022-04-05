@@ -10,8 +10,7 @@ const User = () => {
         .then(data=>setUser(data));
     },[]);
     return (
-        <div className='grid grid-cols-3 gap-4>
-        '>
+        <div className='grid grid-cols-3 gap-4'>
             {
                 users.map(user=> <UserInfo 
                 key={user.id}

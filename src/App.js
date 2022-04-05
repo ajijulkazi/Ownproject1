@@ -6,6 +6,8 @@ import Footer from './componenets/Footer/Footer';
 import NotFound from './componenets/NotFound/NotFound';
 import User from './componenets/User/User';
 import Header from './componenets/Header/Header';
+import UserDetail from './componenets/UserDetail/UserDetail';
+import Home from './componenets/Home/Home';
 
 function App() {
   return (
@@ -13,11 +15,17 @@ function App() {
       <Router>
         <Header></Header>
         <Switch>
-          <Route path='/'>
+          <Route exact path='/'>
           <User></User>
           </Route>
-          <Route path='/home'>
+          <Route path='/user'>
             <User></User>
+          </Route>
+          <Route path='/home'>
+            <Home></Home>
+          </Route>
+          <Route path="/userdetails/:userId">
+              <UserDetail></UserDetail>
           </Route>
           <Route path='*'>
             <NotFound></NotFound>

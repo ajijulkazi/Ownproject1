@@ -1,9 +1,15 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
 const Header = () => {
+    const activeStyle={
+        fontWeight: "bold",
+        color: "red"
+    }
     return (
         <div>
-            <h2 className='text-3xl font-bold underline'>This is Heading.</h2>
+            <NavLink activeStyle={activeStyle} to="/home">Home</NavLink>
+            <NavLink activeStyle={activeStyle} to="/user">Users</NavLink>
+            
         </div>
     );
 };
