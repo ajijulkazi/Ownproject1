@@ -9,6 +9,7 @@ const Header = () => {
         <div>
             <NavLink activeStyle={activeStyle} to="/home">Home</NavLink>
             <NavLink activeStyle={activeStyle} to="/user">Users</NavLink>
+            <NavLink activeStyle={activeStyle} to="/about">About</NavLink>
             
         </div>
     );
